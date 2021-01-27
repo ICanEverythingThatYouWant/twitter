@@ -159,7 +159,16 @@ class Post{
 };
 
 const twitter = new Twitter({
-    listElem: '.tweet-list'
+    listElem: '.tweet-list',
+    modalElems: [
+        {
+            button: '.header__link_tweet',
+            modal: '.modal',
+            overlay: '.overlay',
+            close: '.modal-close__btn'
+        }
+    ]
+
 
 })
 
