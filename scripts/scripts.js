@@ -23,11 +23,12 @@ class FetchData {
  });
 
 class Twitter{
-    constructor({listElem}){
+    constructor({listElem, modalElems}){
         const fetchData = new FetchData()
         this.tweets = new Posts();
         this.elements = {
-            listElem: document.querySelector(listElem)
+            listElem: document.querySelector(listElem),
+             modal: modalElems
         }
 
         fetchData.getPost()
@@ -83,7 +84,7 @@ class Twitter{
 
     }
 
-    openModal(){
+    handlerModal(){
 
     }
 
